@@ -31,8 +31,8 @@ module.exports = {
     //POST (create) new user
     async createUser(req, res){
         try{
-            const dbUserData = await User.create(req.body);
-            res.json(dbUserData);
+            const user = await User.create(req.body);
+            res.json(user);
         }catch(err){
             res.status(500).json(err);
         }
@@ -77,7 +77,7 @@ module.exports = {
         try{
             const user = await User.findOneAndUpdate(
                 { _id: req.params.userId },
-                { $addToSet: { friends: req.body } },
+                { $addToSet: { friends: req.params.friendId } },
                 { runValidators: true, new: true }
             );
             if(!user){
