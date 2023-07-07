@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dayjs": "^1.11.9",
     "express": "^4.17.1",
-    "mongoose": "^7.0.2",
-    "dayjs":"^1.11.9"
+    "mongoose": "^7.0.2"
   }
 }

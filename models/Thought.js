@@ -2,7 +2,6 @@ const { Schema, model } = require('mongoose');
 
 //for subdoc
 const reactionSchema = require('./Reaction');
-const { Reaction } = require('.');
 
 //thought schema
 const thoughtSchema = new Schema(
