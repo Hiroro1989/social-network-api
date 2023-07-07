@@ -39,6 +39,8 @@ module.exports = {
       }
 
       res.json("Created the thought 🎉");
+      console.log(thought);
+      
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
