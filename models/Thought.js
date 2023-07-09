@@ -15,7 +15,7 @@ const thoughtSchema = new Schema(
         createdAt:{
             type: Date,
             default: Date.now,
-            get: (date)=> date.toLocalDateString("en-us"),
+            get: (date) => date.toLocaleDateString("en-us"),
         },
         username:{
            type:String,
